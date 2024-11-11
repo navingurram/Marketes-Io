@@ -1,0 +1,140 @@
+.hero {
+    width: 100%;
+}
+
+.herosetioncontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 55px;
+    padding-right: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.firstpart {
+    background-color: rgba(245, 245, 241, 0.8);
+    height: 350px;
+    position: relative;
+    z-index: 0;
+}
+
+.heading {
+    font-weight: 100;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.description {
+    padding-top: 25px;
+    padding-left: 50px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.facebook {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+    color: rgb(54, 52, 52);
+}
+
+.instagram {
+    font-size: 33px;
+    margin-left: 20px;
+    color: rgb(54, 52, 52);
+}
+
+.secondpart {
+    background-image: url('../assets/mountainous-landscape-dusk.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 360px;
+    z-index: 999;
+    height: 130px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.cardcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+@media screen and (max-width: 1280px) {
+    .herosetioncontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardcontainer {
+        max-width: 850px;
+    }
+
+    .cardcontent {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .herosetioncontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardcontainer {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .cardcontent {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .herosetioncontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cardcontainer {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .cardcontent {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .herosetioncontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .cardcontainer {
+        max-width: 300px;
+        margin-top: 20px;
+        height: 300px;
+        padding: 30px;
+    }
+
+    .cardcontent {
+        gap: 10px;
+    }
+}
+

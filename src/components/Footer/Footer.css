@@ -1,0 +1,16 @@
+.footercontainer {
+    background-color: rgb(231, 228, 228);
+    margin-top: 50px;
+    width: 100%;
+    height: 35vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footercontainer {
+        height: 40vh;
+    }
+}

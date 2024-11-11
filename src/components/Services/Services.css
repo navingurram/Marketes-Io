@@ -1,0 +1,33 @@
+.maincontainer {
+    margin-top: 150px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.servicescontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.gridrow {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    .servicescontainer {
+        grid-template-columns: 1fr;
+    }
+}
